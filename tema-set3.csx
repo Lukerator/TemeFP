@@ -825,7 +825,7 @@ static void T23() {
     int[] v1 = new int[m];
     int[] v2 = new int[m];
 
-    Console.WriteLine("Vector v1 (0/1):");
+    Console.WriteLine("Vector v1:");
     for (int i = 0; i < m; i++) {
         Console.Write($"v1[{i}] = ");
         v1[i] = int.Parse(Console.ReadLine());

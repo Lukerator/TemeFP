@@ -623,7 +623,7 @@ static void T20() {
 
     int[] s1 = new int[n1];
     for (int i = 0; i < n1; i++) {
-        Console.Write($"s1[{i}] (0/1) = ");
+        Console.Write($"s1[{i}] = ");
         s1[i] = int.Parse(Console.ReadLine());
     }
 
@@ -632,7 +632,7 @@ static void T20() {
 
     int[] s2 = new int[n2];
     for (int i = 0; i < n2; i++) {
-        Console.Write($"s2[{i}] (0/1) = ");
+        Console.Write($"s2[{i}] = ");
         s2[i] = int.Parse(Console.ReadLine());
     }
 

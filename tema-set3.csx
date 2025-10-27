@@ -198,10 +198,10 @@ static void T5() {
         v[i] = int.Parse(Console.ReadLine());
     }
 
-    Console.Write("e (element de inserat) = ");
+    Console.Write("e = ");
     int e = int.Parse(Console.ReadLine());
 
-    Console.Write("k (pozitie) = ");
+    Console.Write("k = ");
     int k = int.Parse(Console.ReadLine());
 
     if (k < 0) k = 0;
@@ -233,7 +233,7 @@ static void T6() {
         v[i] = int.Parse(Console.ReadLine());
     }
 
-    Console.Write("k (pozitie de sters) = ");
+    Console.Write("k = ");
     int k = int.Parse(Console.ReadLine());
 
     for (int i = k; i < n - 1; i++) {
@@ -303,7 +303,7 @@ static void T9() {
         v[i] = int.Parse(Console.ReadLine());
     }
 
-    Console.Write("k (nr pozitii rotire) = ");
+    Console.Write("k = ");
     int k = int.Parse(Console.ReadLine());
 
     k = ((k % n) + n) % n;
@@ -469,7 +469,7 @@ static void T14() {
         }
     }
 
-    Console.WriteLine("Zerouri la sfarsit (single loop):");
+    Console.WriteLine("Zerouri la sfarsit:");
     for (int i = 0; i < n; i++) {
         Console.Write(v[i] + " ");
     }
@@ -741,14 +741,14 @@ static void T22() {
         v2[i] = int.Parse(Console.ReadLine());
     }
 
-    int[] inters = new int[Math.Min(n1, n2)];
+    int[] vect = new int[Math.Min(n1, n2)];
     int li = 0;
 
     for (int i = 0; i < n1; i++) {
         for (int j = 0; j < n2; j++) {
             if (v1[i] == v2[j]) {
-                if (!Exista(inters, li, v1[i])) {
-                    inters[li] = v1[i];
+                if (!Exista(vect, li, v1[i])) {
+                    vect[li] = v1[i];
                     li++;
                 }
                 break;
@@ -831,7 +831,7 @@ static void T23() {
         v1[i] = int.Parse(Console.ReadLine());
     }
 
-    Console.WriteLine("Vector v2 (0/1):");
+    Console.WriteLine("Vector v2:");
     for (int i = 0; i < m; i++) {
         Console.Write($"v2[{i}] = ");
         v2[i] = int.Parse(Console.ReadLine());
@@ -909,7 +909,7 @@ static void T24() {
 }
 
 static void T25() {
-    Console.Write("Dim v1 (sortat): ");
+    Console.Write("Dim v1: ");
     int n1 = int.Parse(Console.ReadLine());
 
     int[] v1 = new int[n1];
@@ -918,7 +918,7 @@ static void T25() {
         v1[i] = int.Parse(Console.ReadLine());
     }
 
-    Console.Write("Dim v2 (sortat): ");
+    Console.Write("Dim v2: ");
     int n2 = int.Parse(Console.ReadLine());
 
     int[] v2 = new int[n2];
@@ -1106,7 +1106,7 @@ static void T26() {
     }
     else {
         Scadere(b, l2, a, l1, out int[] dif, out int ld);
-        Console.Write("Dif (b-a): ");
+        Console.Write("Dif: ");
         for (int i = 0; i < ld; i++) {
             Console.Write(dif[i]);
         }
@@ -1315,7 +1315,7 @@ static void T30() {
         w[best] = tw;
     }
 
-    Console.WriteLine("Ordonat E(W):");
+    Console.WriteLine("Ordonat:");
     for (int i = 0; i < n; i++) {
         Console.Write(e[i] + "(" + w[i] + ") ");
     }
